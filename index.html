@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <article data-testid="test-profile-card" class="profile-card">
+        <figure>
+            <img src="profile.jpg" alt="Profile Picture" data-testid="test-user-avatar">
+            <!-- <figcaption></figcaption> -->
+        </figure>
+
+        <div class="profile-info">
+            <header aria-label="User name and bio">
+                <h2 data-testid="test-user-name">Emediong Joseph Bassey</h2>
+            </header>
+
+            <p data-testid="test-user-bio">Passionate full-stack developer with a love for creating elegant solutions to
+                complex problems.
+                I enjoy building responsive, accessible web applications that make a difference.</p>
+
+            <p id="time-display">CurrentTime: <span data-testid="test-user-time"></span></p>
+
+            <nav aria-label="Social media links" data-testid="test-user-social-links">
+                <ul>
+                    <li><a href="https://twitter.com/eackite" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-twitter">Twitter</a></li>
+                    <li><a href="https://github.com/emzy-jayyy" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-github">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/emediong-bassey-194973282" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+                    <li><a href="https://facebook.com/emediong.bassey.94849" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-facebook">Facebook</a></li>
+                </ul>
+            </nav>
+
+            <div class="hobbies-dislikes">
+                <section aria-labelledby="hobbies-heading">
+                    <h3 id="hobbies-heading">Hobbies</h3>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Playing Video Games</li>
+                        <li>Basketball</li>
+                        <li>Traveling to new places</li>
+                        <li>Watching Anime</li>
+                    </ul>
+                </section>
+    
+                <section aria-labelledby="dislikes-heading">
+                    <h3 id="dislikes-heading">Dislikes</h3>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Procrastination</li>
+                        <li>Rock music</li>
+                        <li>Unresponsive layouts</li>
+                        <li></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
