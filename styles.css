@@ -8,6 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -155,7 +156,40 @@ section:last-of-type ul li::before {
     color: #ef4444;
 }
 
+.page-naviagtion ul {
+    max-width: 400px;
+    list-style: none;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.page-naviagtion ul li a{
+    text-decoration: none;
+    background-color:#1a1a1a ;
+    color: #9EF646;
+    padding: 0.9rem 1rem;
+    border: 1px solid #9EF646;
+    border-radius: 0.5rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.page-naviagtion ul li a:hover{
+    background-color: #252525;
+    color: #9EF646;
+}
+
 @media (min-width: 768px) {
+    body {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
     .profile-card {
         flex-direction: row;
         max-width: 900px;
@@ -199,6 +233,12 @@ section:last-of-type ul li::before {
     section h3,
     section ul li {
         text-align: left;
+    }
+
+    .page-naviagtion ul{
+        max-width: 900px;
+        justify-content: space-between;
+        margin-top: 0rem;
     }
 }
 
