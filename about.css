@@ -13,14 +13,14 @@ body {
 
 main {
     max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
+    margin: 1rem auto;
+    padding: 1rem;
     background: #1a1a1a;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-h1{
+h1 {
     color: white;
     margin-bottom: 0.5rem;
 }
@@ -29,9 +29,32 @@ h2 {
     color: #9ef646;
 }
 
+.main-navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-navigation li {
+    list-style: none;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    background-color: #1a1a1a;
+    color: #9EF646;
+    padding: 0.9rem 2rem;
+    border: 1px solid #9EF646;
+    border-radius: 0.5rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
 section {
     margin-bottom: 2rem;
-    padding: 1.5rem;
+    padding: 1rem;
     background: #252525;
     border-radius: 12px;
     border-left: 4px solid #9ef646;

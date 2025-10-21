@@ -18,7 +18,35 @@ main {
     color: #f4f4f4;
     max-width: 800px;
     margin: 2rem auto;
-    padding: 2rem;
+    padding: 1rem;
+}
+
+main p,
+h1 {
+    margin-bottom: 0.9rem;
+}
+
+.main-navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-navigation li {
+    list-style: none;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    background-color: #1a1a1a;
+    color: #9EF646;
+    padding: 0.9rem 2rem;
+    border: 1px solid #9EF646;
+    border-radius: 0.5rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 1rem;
 }
 
 form {
@@ -104,6 +132,12 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background: #1a1a1a;
     color: #9ef646;
-    border:2px solid #9ef646;
+    border: 2px solid #9ef646;
     transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    main {
+       padding: 2rem;
+    }
 }
