@@ -1,3 +1,5 @@
+// console.log('JavaScript file loaded successfully!');
+
 const form = document.getElementById('contact-form');
 const nameInput = document.getElementById('contact-name');
 const emailInput = document.getElementById('contact-email');

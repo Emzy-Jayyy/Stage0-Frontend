@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
-    <script src="contact.js"></script>
 </head>
 
 <body>
@@ -55,9 +54,15 @@
             <button type="submit" data-testid="test-contact-submit">
                 Send Message
             </button>
+
+            <div id="success-message" class="success-message" data-testid="test-contact-success" role="status"
+                aria-live="polite">
+                ✓ Thank you! Your message has been sent successfully.
+            </div>
         </form>
     </main>
 
+    <script src="contact.js"></script>
 </body>
 
 </html>
